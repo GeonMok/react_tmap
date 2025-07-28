@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom"; // 1. Routes와 Route를 impor
 import Header from "./components/Header";
 import MainPage from "./pages/MainPage"; // 2. 페이지 컴포넌트 import
 import Practice from "./pages/Practice";
+import TmapSearch from "./pages/TmapSearch";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/tmap-search" element={<TmapSearch />} />
         </Routes>
       </div>
     </div>

@@ -17,9 +17,9 @@ function Header() {
               <Link to="/practice" className="hover:text-gray-900">
                 티맵 연습
               </Link>
-              <a href="#" className="hover:text-gray-900">
-                목록
-              </a>
+              <Link to="/tmap-search" className="hover:text-gray-900">
+                POI 연습
+              </Link>
               <a href="#" className="hover:text-gray-900">
                 랭킹
               </a>
