@@ -55,7 +55,7 @@ function MainPage() {
 
     // 지도 인스턴스가 생성된 후, 브라우저가 잠시 멈춤(breathing room)을 가질 수 있도록
     // setTimeout으로 아주 짧은 지연(0.1초) 후에 폴리곤을 그립니다.
-    const timerId = setTimeout(drawPolygons, 50);
+    const timerId = setTimeout(drawPolygons, 90);
 
     // 컴포넌트가 사라질 때 예약된 타이머를 반드시 정리해줍니다 (메모리 누수 방지).
     return () => {
