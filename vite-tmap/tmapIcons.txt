@@ -1,38 +1,13 @@
-URL의 기본 구조는 pin_{색상}_{크기}_{이름/숫자}.png 형태입니다.
-
-색상:
-
-b: 파란색 (blue)
-
-r: 빨간색 (red)
-
-g: 초록색 (green)
-
-y: 노란색 (yellow)
-
-크기:
-
-s: 작은 크기 (small)
-
-m: 중간 크기 (medium)
-
-l: 큰 크기 (large)
-
-이름/숫자:
-
-0 ~ 99: 숫자 아이콘
-
-dot: 점 모양 아이콘
-
-a ~ z: 알파벳 아이콘
-
-start: 출발지 아이콘
-
-end: 도착지 아이콘
-
-예시
-pin_r_m_1.png: 빨간색 중간 크기 1번 핀
-
-pin_g_s_dot.png: 초록색 작은 크기 점 핀
-
-pin_y_l_start.png: 노란색 큰 크기 출발지 핀
+close1
+scale_bar
+map_ctrl
+zoom_slider_m
+measure_tools
+circle1
+start
+arrival
+point
+b_m_(0~9, a~z,)
+b_s_simple
+r_m_(0~9, a~z)
+r_s_simple

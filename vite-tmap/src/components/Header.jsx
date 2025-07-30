@@ -13,18 +13,18 @@ function Header() {
             <Link to="/" className="text-2xl font-bold text-gray-800">
               Findust
             </Link>
-            <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-500">
+            <div className="flex items-center space-x-8 text-sm font-medium text-gray-500">
               <Link to="/practice" className="hover:text-gray-900">
                 티맵 연습
               </Link>
               <Link to="/tmap-search" className="hover:text-gray-900">
                 POI 연습
               </Link>
-              <a href="#" className="hover:text-gray-900">
-                랭킹
+              <a href="/routing_car" className="hover:text-gray-900">
+                경로 연습(자동차)
               </a>
-              <a href="#" className="flex items-center hover:text-gray-900">
-                마이페이지
+              <a href="/routing_ped" className="flex items-center hover:text-gray-900">
+                경로 연습(보행자)
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
               </a>
             </div>
