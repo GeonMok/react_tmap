@@ -38,7 +38,7 @@ const Routing_ped = () => {
       // ⭐️ 출발지 마커를 생성합니다.
       const startMarker = new window.Tmapv3.Marker({
         position: startPoint,
-        icon: window.Tmapv3.asset.Icon.get(`start`),
+        icon: window.Tmapv3.asset.Icon.get(`b_s_simple`),
         map: mapInstance,
       });
 
@@ -60,9 +60,7 @@ const Routing_ped = () => {
       });
 
       // 2. fitBounds 함수로 지도 viewport 조절
-      mapInstance.fitBounds(bounds, {
-        padding: 180, // 지도 경계선과 경로 사이의 여백 (px)
-      });
+      mapInstance.fitBounds(bounds, 100);
     },
     [mapInstance]
   );
@@ -82,6 +80,7 @@ const Routing_ped = () => {
     const TMAP_API_KEY = import.meta.env.VITE_TMAP_APP_KEY; // 🚨 본인의 TMap API 키로 교체해야 합니다.
     const start = new window.Tmapv3.LatLng(37.553756, 126.925356);
     const end = new window.Tmapv3.LatLng(37.554034, 126.975598);
+    const passList = "126.9376,37.554936"; // 에어코리아 신촌로 측정소
 
     const params = new URLSearchParams({
       version: 1,
@@ -95,6 +94,7 @@ const Routing_ped = () => {
       reqCoordType: "WGS84GEO",
       resCoordType: "WGS84GEO",
       searchOption: 0, // 0, 4, 30 만 가능
+      passList: passList,
     });
 
     /*    const url = `https://apis.openapi.sk.com/tmap/routes/pedestrian?${params.toString()}`;*/
