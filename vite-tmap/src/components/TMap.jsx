@@ -15,7 +15,7 @@ function TMap({ onMapLoad }) {
             center: new window.Tmapv3.LatLng(37.5652045, 126.98702028),
             width: "100%",
             height: "100%",
-            zoom: 14,
+            zoom: 10,
           });
           // 맵 로드가 성공하면 부모 컴포넌트로 맵 인스턴스를 전달
           onMapLoad(mapInstance, "success");

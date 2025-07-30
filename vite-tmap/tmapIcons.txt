@@ -11,3 +11,5 @@ b_m_(0~9, a~z,)
 b_s_simple
 r_m_(0~9, a~z)
 r_s_simple
+
+-> window.Tmapv3.asset.Icon.get(`b_m_${index}`)
