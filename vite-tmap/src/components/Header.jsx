@@ -20,13 +20,13 @@ function Header() {
               <Link to="/tmap-search" className="hover:text-gray-900">
                 POI 연습
               </Link>
-              <a href="/routing_car" className="hover:text-gray-900">
+              <Link to="/routing_car" className="hover:text-gray-900">
                 경로 연습(자동차)
-              </a>
-              <a href="/routing_ped" className="flex items-center hover:text-gray-900">
+              </Link>
+              <Link to="/routing_ped" className="flex items-center hover:text-gray-900">
                 경로 연습(보행자)
                 <ChevronDownIcon className="w-4 h-4 ml-1" />
-              </a>
+              </Link>
             </div>
           </div>
           {/* 오른쪽: 버튼 */}
